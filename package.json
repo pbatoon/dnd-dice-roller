@@ -1,6 +1,6 @@
 {
   "name": "dnd-dice-roller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple command line application to roll DnD dice.",
   "main": "index.js",
   "bin": {
