@@ -1,6 +1,10 @@
 # dnd-dice-roller
 A command line application for rolling DnD dice.
 
+### Dependencies
+* [Commander](https://www.npmjs.com/package/commander)
+* [Chalk](https://www.npmjs.com/package/chalk)
+
 ###  Options
 * **-v, --version**
   * Fetch the version number of the tool.
