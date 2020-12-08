@@ -1,5 +1,5 @@
 {
-  "name": "dnd-dice-roller",
+  "name": "@pbatoon/dnd-dice-roller",
   "version": "1.0.0",
   "description": "A simple command line application to roll DnD dice.",
   "main": "index.js",
