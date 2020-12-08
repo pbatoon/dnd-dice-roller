@@ -1,0 +1,27 @@
+{
+  "name": "dnd-dice-roller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "dnd-dice-roller": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbatoon/dnd-dice-roller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbatoon/dnd-dice-roller/issues"
+  },
+  "homepage": "https://github.com/pbatoon/dnd-dice-roller#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0"
+  }
+}
