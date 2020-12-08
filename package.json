@@ -18,7 +18,7 @@
     "url": "git+https://github.com/pbatoon/dnd-dice-roller.git"
   },
   "author": "Paula Batoon",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pbatoon/dnd-dice-roller/issues"
   },
