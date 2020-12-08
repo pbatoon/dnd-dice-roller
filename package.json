@@ -1,7 +1,7 @@
 {
   "name": "dnd-dice-roller",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple command line application to roll DnD dice.",
   "main": "index.js",
   "bin": {
     "dnd-dice-roller": "./index.js"
@@ -9,12 +9,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "dnd",
+    "dnd-dice"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pbatoon/dnd-dice-roller.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Paula Batoon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pbatoon/dnd-dice-roller/issues"
