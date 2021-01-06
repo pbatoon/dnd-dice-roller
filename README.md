@@ -14,6 +14,7 @@ A command line application for rolling DnD dice.
 * **-d, --dice <dice>**
   * Roll some dice. Input is in standard dice format such as 4d6 or d20.
   * Example: `dnd-dice-roller -d 4d6`
+  * Addition modifier support added. The format is `dnd-dice-roller -d 4d6+5`
 * **-a, --ability roll**
   * Generate 6 ability scores for character creation.
 * **--advantage**

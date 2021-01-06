@@ -15,7 +15,7 @@ function Character() {
 
 const verifyDiceInput = (input) => {
     // regex expressions for correct dice format
-    let format = "(\d|^)*d(?:4|6|8|10|12|20|100)(\\+\\d+|$)";
+    let format = "(\d|^)*d(?:4|6|8|10|12|20|100)((\\+|\\-)\\d+|$)";
 
     // Check if dice input is in the correct format
     if(input.match(format) == null) {
@@ -65,6 +65,7 @@ const diceRoll = (input) => {
     const inputString = String(input);
     const numDice = input.substr(0, input.indexOf("d"));
     let diceSides = input.substr((input.indexOf("d") + 1));
+    let modifier = inputString.split(/\+|-/)[1];
 
     // If no prefix, then roll as single die
     if(input.indexOf("d") == 0) {
@@ -78,10 +79,9 @@ const diceRoll = (input) => {
     // if input includes modifier, add all rolls together and add modifier
     if(inputString.includes('+')){
         let total = 0;
-        let modifier = inputString.split('+')[1];
+        
         let sidesString = inputString.split('d').pop().split('+');
         diceSides = parseInt(sidesString);
-
         while (i < numDice) {
             let roll = Math.floor(Math.random() * diceSides) + 1;
             total += roll;
@@ -92,8 +92,22 @@ const diceRoll = (input) => {
         total += parseInt(modifier);
         //console.log(modifier);
         return total;
+    } 
+    else if (inputString.includes('-')){
+        let total = 0;
         
+        let sidesString = inputString.split('d').pop().split('+');
+        diceSides = parseInt(sidesString);
+        while (i < numDice) {
+            let roll = Math.floor(Math.random() * diceSides) + 1;
+            total += roll;
+            //console.log(roll);
+            i++;
+        }
 
+        total -= parseInt(modifier);
+        //console.log(modifier);
+        return total;
     }
 
     // for each number of dice specified, roll and append to output string
